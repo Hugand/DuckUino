@@ -1,0 +1,93 @@
+body{
+  background-color: #23292f;
+  font-family: 'Alata', sans-serif;
+}
+
+.flex-display{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-vert{
+  flex-direction: column;
+}
+
+.text-container textarea{
+  position: relative;
+  width: 100%;
+  resize: none;
+  height: 100%;
+  outline: none;
+  border-radius: 10px;
+  transition: .2s;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+#ducky-container textarea:focus{
+  border: 3px solid #c93c3c;
+}
+
+#ducky-container{
+  width: 50%;
+}
+
+#compiled-container{
+  width: 50%;
+}
+
+#compiled-container textarea{
+  background: transparent;  
+  border: 0;
+}
+
+#ducky-container,
+#compiled-container {
+  height: 90%;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 90%;
+  height: fit-content;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background-color: #fbf3e5;
+  padding: 10px;
+  border-radius: 25px;
+  filter: drop-shadow(0 0 0.75rem #111314);
+  box-sizing: border-box;
+}
+
+.container h1{
+  text-align: center;
+}
+
+.text-container{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: auto;
+}
+
+#download-btn{
+  width: 100%;
+  height: 40px;
+  background-color: #bf2626;
+  color: white;
+  border: 0px solid #bf2626;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: .3s;
+}
+
+#download-btn:hover{
+  background: transparent;
+  border-width: 3px;
+  color: #bf2626;
+  cursor: pointer;
+  font-weight: bold;
+}
